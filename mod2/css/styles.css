@@ -64,8 +64,7 @@ p {
 
 @media (max-width: 767px) {
   .col-sm {
-  width: 90%;
-  margin-left: 5%;
+  width: 100%;
   }
 }
 
