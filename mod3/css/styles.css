@@ -1,0 +1,17 @@
+.navbar-brand h1 { /* Restaurant name */
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .5;
+}
+
+#nav-list a {
+  background-color: #DDD;
+  color: #000;
+  border: 1px solid #CCC;
+}
+
+section {
+  background-color: #DDD;
+  margin-bottom: 15px;
+}
