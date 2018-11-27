@@ -26,11 +26,13 @@ function NarrowItDownController(MenuSearchService) {
 
   list.found = [];
   list.searchTerm = "";
+  list.notFound = false;
 
   list.getItems = function() {
     MenuSearchService.getMatchedMenuItems(list.searchTerm)
       .then(function (response) {
       list.found = response;
+      list.notFound = list.listIsEmpty();
     });
   };
 
@@ -38,7 +40,7 @@ function NarrowItDownController(MenuSearchService) {
     list.found.splice(itemIndex, 1);
   };
 
-  list.notFound = function() {
+  list.listIsEmpty = function() {
       return (list.found.length===0);
   }
  }
