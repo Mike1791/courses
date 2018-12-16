@@ -3,6 +3,7 @@
 <fieldset>
   <form class="signup" name='regForm' novalidate>
 
+    <div>First name*</div>
     <input type="text" name="firstname" placeholder="First name"
       ng-model="reg.user.firstname"
       required
@@ -13,6 +14,7 @@
       </span>
       <br>
 
+    <div>Last name*</div>
     <input type="text" name="lastname" placeholder="Last name"
       ng-model="reg.user.lastname"
       required
@@ -23,6 +25,7 @@
       </span>
       <br>
 
+    <div>E-mail address*</div>
     <input type="email" name="email" placeholder="Email"
       ng-model="reg.user.email"
       required>
@@ -31,6 +34,7 @@
       </span>
       <br>
 
+    <div>Phone nubmer*</div>
     <input type="text" name="phone" placeholder="Phone ###-###-####"
       ng-model="reg.user.phone"
       required
@@ -40,6 +44,7 @@
       </span>
       <br>
       
+      <div>Your favourite dish (short name)*</div>
       <input type="text" name="dish" placeholder="Favourite dish"
         ng-model="reg.user.dish"
       required>
