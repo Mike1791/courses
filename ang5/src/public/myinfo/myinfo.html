@@ -1,0 +1,28 @@
+<div ng-if="!user.userinfo.registered" class="container">
+  Not Signed Up Yet.
+  <a class="signup" ui-sref="public.signup"> Sign up Now!</a>
+</div>
+
+<div ng-if="user.userinfo.registered" class="container">
+  <h1>My information</h1>
+
+    <div>
+      <span>Fist name: </span> <span>{{user.userinfo.firstname}}</span>
+    </div>
+    <div>
+      <span>Last name: </span> <span>{{user.userinfo.lastname}}</span>
+    </div>
+    <div>
+      <span>E-mail: </span> <span>{{user.userinfo.email}}</span>
+    </div>
+    <div>
+      <span>Phone: </span> <span>{{user.userinfo.phone}}</span>
+    </div>
+    <div>
+      <span>Favourite dish: </span> <span>{{user.userinfo.dish}}</span>
+    </div>
+    
+    <menu-item 
+    menu-item="user.userinfo.dishData">
+    </menu-item>
+</div>
